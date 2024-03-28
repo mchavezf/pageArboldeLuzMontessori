@@ -6,5 +6,5 @@ import tailwind from "@astrojs/tailwind";
 export default defineConfig({
   integrations: [tailwind()],
   site: 'https://mchavezf.github.io',
-  base: 'my-pageArboldeLuzMontessori',
+  base: 'pageArboldeLuzMontessori',
 });
