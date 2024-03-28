@@ -1,6 +1,5 @@
 /** @type {import('tailwindcss').Config} */
 
-const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
   content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
@@ -14,9 +13,9 @@ module.exports = {
         muted: "#7d7c7c",
       },
       fontFamily: {
-        sans: ['var(--aw-font-sans)', ...defaultTheme.fontFamily.sans],
-        serif: ['var(--aw-font-serif)', ...defaultTheme.fontFamily.serif],
-        heading: ['var(--aw-font-heading)', ...defaultTheme.fontFamily.sans],
+        sans: ['ui-sans-serif', 'system-ui'],
+        serif: ['ui-serif', 'Georgia'],
+        heading: ['ui-sans-serif', 'system-ui'],
       },
     },
   },
