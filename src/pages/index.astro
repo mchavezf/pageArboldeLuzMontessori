@@ -1,10 +1,21 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Hero from '../components/Hero.astro';
+import FeaturesSello from '../components/Features_sello.astro';
+import Stats from "../components/Stats.astro"
 ---
 
 <Layout title="Arbol de Luz Montessori">
 	<div class="text-center pb-10 md:pb-16 max-w-5xl mx-auto">
 		<Hero/>
+		<FeaturesSello/>
+		
+		<Stats
+		stats={[
+			{ title: 'Colegios montessori en el mundo', amount: '132K' },
+			{ title: 'Alumnos', amount: '24.8K' },
+			{ title: 'Montessori en Chile', amount: '10.3K' },
+		  ]}
+		/>
 	</div>
 </Layout>
