@@ -1,0 +1,42 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Hero from "../components/HeroLaEscuela.astro"
+import Stats from "../components/Stats.astro"
+import Educadores from '../components/educadores.astro';
+---
+<Layout title="La escuela">
+    <Hero/>
+    <Stats
+    stats={[
+        { title: 'En Puerto Varas', amount: '3 Años' },
+        { title: 'Alumnos', amount: '25' },
+        { title: 'Educadores', amount: '3' },
+        ]}
+    />
+    <section class="max-w-3xl mb-8 md:mx-auto md:mb-12 text-center mt-12 py-12 ">
+    <h2 class="mx-font-heading text-heading font-bold text-3xl">Educadores</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 ">
+    <article >
+        <Educadores educador="Joanna">
+            <p slot=resumen>
+                Fundadora de la Escuela, educadora montessori, madre de 3 hijos          
+            </p>
+            <article>
+                <p>aqui va unda descripción de la vida y valores de la joanna</p>
+            </article>
+        </Educadores>
+    </article>
+    <article>
+        <Educadores educador="Eduardo">
+            <p slot=resumen >
+                destacado profesor 
+            
+            </p>
+            <article>
+                <p>aqui va unda descripción de la vida y valores de la eduardo</p>
+            </article>
+        </Educadores>
+    </article>
+</div>
+</section>
+</Layout>
